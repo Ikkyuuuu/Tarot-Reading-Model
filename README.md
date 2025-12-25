@@ -9,7 +9,7 @@ This project focuses on producing short, structured interpretations suitable for
 Download the GGUF model(s) here:  **https://huggingface.co/Ikkyuuu/Tarot-Reading-Model**
 <br><br>
 
-## 🦥 Base model
+## 🦥 Base model (Unsloth)
 
 <img src="https://github.com/user-attachments/assets/f681f54a-c411-4e64-b46d-b1badadb0c21" style="width:100%" />
 
