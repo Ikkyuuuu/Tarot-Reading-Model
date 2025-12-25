@@ -4,6 +4,10 @@ A fine-tuned **Phi-3 Mini** model for generating **3-card tarot readings** from 
 This project focuses on producing short, structured interpretations suitable for local inference.
 <br><br>
 
+## 🔗 Download (Hugging Face)
+
+Download the GGUF model(s) here:  **https://huggingface.co/Ikkyuuu/Tarot-Reading-Model**
+<br><br>
 
 ## 🦥 Base model
 
