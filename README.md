@@ -5,7 +5,7 @@ This project focuses on producing short, structured interpretations suitable for
 <br><br>
 
 
-## Base model
+## 🦥 Base model
 
 <img src="https://github.com/user-attachments/assets/f681f54a-c411-4e64-b46d-b1badadb0c21" style="width:100%" />
 
@@ -15,17 +15,17 @@ This project focuses on producing short, structured interpretations suitable for
   https://huggingface.co/unsloth/Phi-3-mini-4k-instruct
 <br>
 
-## Model format
+## 📦 Model format
 This repo uses a **GGUF** export for local inference (e.g. `phi3_tarot.Q4_K_M.gguf`) compatible with **llama.cpp** / **llama-cpp-python**.
 <br><br>
 
-## Setup (Python)
+## 💾 Setup (Python)
 ```bash
 pip install -U llama-cpp-python 
 ```
 <br>
 
-## Quick Start (llama-cpp-python)
+## 🚀 Quick Start (llama-cpp-python)
 ```bash
 from llama_cpp import Llama
 
@@ -49,7 +49,7 @@ print(out["choices"][0]["text"].strip())
 ```
 <br>
 
-## Data Source
+## 📚 Data Source
 Tarot dataset used for training : https://huggingface.co/datasets/Dendory/tarot/tree/main
 <br>
 
