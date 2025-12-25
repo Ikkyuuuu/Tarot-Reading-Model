@@ -19,9 +19,33 @@ This project focuses on producing short, structured interpretations suitable for
 This repo uses a **GGUF** export for local inference (e.g. `phi3_tarot.Q4_K_M.gguf`) compatible with **llama.cpp** / **llama-cpp-python**.
 <br><br>
 
-## Installation (Python)
+## Setup (Python)
 ```bash
-pip install -U llama-cpp-python flask
+pip install -U llama-cpp-python 
+```
+<br>
+
+## Quick Start (llama-cpp-python)
+```bash
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="phi3_tarot.Q4_K_M.gguf",
+    n_ctx=4096,
+)
+
+prompt = """You are a tarot reader.
+User question: Will I get a new job soon?
+Cards: 1) The Fool (upright), 2) Three of Pentacles (upright), 3) The Moon (reversed)
+Give a short 3-card reading with structure:
+- Past
+- Present
+- Future
+- Advice
+"""
+
+out = llm(prompt, max_tokens=250, temperature=0.7)
+print(out["choices"][0]["text"].strip())
 ```
 <br>
 
